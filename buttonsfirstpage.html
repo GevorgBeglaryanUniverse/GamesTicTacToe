@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select TicTacToe Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #CC0066;
+        }
+        #menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+			width: 100%;
+			max-width: 600px;
+			box-sizing: border-box;
+        }
+        .button {
+            padding: 14px 30px;
+            margin: 10px;
+            font-size: 1.25rem;
+            background-color: #CC0066;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+			width: 100%;
+            max-width: 300px;
+            box-sizing: border-box;
+        }
+        h1 {
+            margin-bottom: 20px;
+			color: white;
+			font-size: 2rem;
+        }
+		.button:hover {
+			text-decoration: underline;
+			color: white;
+		}
+        @media (max-width: 600px) {
+            .button {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .button {
+                font-size: 1.25em;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="menu">
+        <h1>Select TicTacToe Game</h1>
+		
+        <a  href="humanvshuman.html" class="button">Human vs Human</a>
+        <a  href="humanvsroboteasy.html" class="button">Human vs AI Easy</a>
+        <a  href="humanvsrobothard.html" class="button">Human vs AI Hard</a>
+    </div>
+</body>
+</html>
