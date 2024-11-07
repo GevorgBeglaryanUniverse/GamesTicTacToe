@@ -1,37 +1,32 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <title></title>
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CKS2RD2ERH">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CKS2RDERH"> 
   </script>
   <script>
      window.dataLayer = window.dataLayer || [];
      function gtag() {dataLayer.push(arguments);}
      gtag('js', new Date());
-     gtag('config', 'G-CKS2RD2ERH');
+     gtag('config', 'G-CKS2RDERH');
   </script>
-  <link rel="stylesheet" href="stylehumanvsroboteasy.css">
+  <link rel="stylesheet" href="stylehumanvsrobothard.css">
 </head>
-
 <body>
-  <table id="game-board" class ="table-container">
+  <table>
     <tr>
       <td class="cell" id="0"></td>
       <td class="cell" id="1"></td>
       <td class="cell" id="2"></td>
     </tr>
-
     <tr>
       <td class="cell" id="3"></td>
       <td class="cell" id="4"></td>
       <td class="cell" id="5"></td>
     </tr>
-
     <tr>
       <td class="cell" id="6"></td>
       <td class="cell" id="7"></td>
@@ -42,14 +37,13 @@
   <div class="endgame">
     <div class="text"></div>
     <button onClick="startGame()">Replay</button>
-    <button onclick="goHome()">Home</button>
+	<button onclick="goHome()">Home</button> </a>
   </div>
   <div class="selectSym">
     <p>Select symbol:</p>
     <button onClick="selectSym('X')">X</button>
     <button onClick="selectSym('O')">O</button>
   </div>
-  <script src="scripthumanvsroboteasy.js"></script>
+  <script src="scripthumanvsrobothard.js"></script>
 </body>
-
 </html>
